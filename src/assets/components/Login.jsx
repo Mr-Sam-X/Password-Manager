@@ -12,7 +12,7 @@ const Login = () => {
                 // Define an async function inside the effect to fetch data
                 const fetchAdmins = async () => {
                     try {
-                        const response = await fetch('https://backend-of-password-manager-mu.vercel.app/api/GetAdmins');
+                        const response = await fetch('https://vercel.app/GetAdmins');
                         const data = await response.json();
                         console.log("All Admins",data)
                         setall_admins(data); // Add the fetched MongoDB array to your state
