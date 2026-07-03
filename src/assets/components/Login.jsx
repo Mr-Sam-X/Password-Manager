@@ -13,7 +13,7 @@ const Login = () => {
                 const fetchAdmins = async () => {
                     try {
                         // Delete the old line and change it exactly to this:
-                        const response = await fetch('https://backend-of-password-manager-mu.vercel.app/api');
+                        const response = await fetch('https://backend-of-password-manager-mu.vercel.app/api/GetAdmins');
 
                         const data = await response.json();
                         console.log("All Admins",data)
