@@ -12,7 +12,9 @@ const Login = () => {
                 // Define an async function inside the effect to fetch data
                 const fetchAdmins = async () => {
                     try {
+                        // Delete the old line and change it exactly to this:
                         const response = await fetch('https://vercel.app');
+
                         const data = await response.json();
                         console.log("All Admins",data)
                         setall_admins(data); // Add the fetched MongoDB array to your state
