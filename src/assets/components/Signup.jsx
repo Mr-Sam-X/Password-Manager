@@ -14,7 +14,7 @@ const Signup = () => {
         // Define an async function inside the effect to fetch data
         const fetchAdmins = async () => {
             try {
-                const response = await fetch('http://localhost:3000/GetAdmins');
+                const response = await fetch('https://backend-of-password-manager-mu.vercel.app/GetAdmins');
                 const data = await response.json();
                 console.log("All Admins",data)
                 setall_admins(data); // Add the fetched MongoDB array to your state
@@ -44,7 +44,7 @@ const Signup = () => {
                     try {
                         // 2. Send the data to your Node/Express MongoDB backend API using await
                         // Replace 'http://localhost:3000/' with your actual backend URL if different
-                        const response = await fetch('http://localhost:3000/registeradmin', {
+                        const response = await fetch('https://backend-of-password-manager-mu.vercel.app/registeradmin', {
                             method: 'POST',
                             headers: {
                                 'Content-Type': 'application/json',

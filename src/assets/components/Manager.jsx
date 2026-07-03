@@ -14,7 +14,7 @@ const Manager = () => {
     // Define an async function inside the effect to fetch data
     const fetchPasswords = async () => {
         try {
-            const response = await fetch(`http://localhost:3000/?adminEmail=${adminEmail}`);
+            const response = await fetch(`https://backend-of-password-manager-mu.vercel.app/?adminEmail=${adminEmail}`);
 
             const data = await response.json();
             console.log("Admin_Email",adminEmail)
@@ -69,7 +69,7 @@ theme: "dark",
     try {
         // 2. Send the data to your Node/Express MongoDB backend API using await
         // Replace 'http://localhost:3000/' with your actual backend URL if different
-        const response = await fetch('http://localhost:3000/', {
+        const response = await fetch('https://backend-of-password-manager-mu.vercel.app/', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -118,7 +118,7 @@ else {
     const updatedData = { ...form, id: UUid };
 
     // 1. Send the updated data to the backend API
-    await fetch('http://localhost:3000/', {
+    await fetch('https://backend-of-password-manager-mu.vercel.app/', {
         method: 'PUT',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(updatedData)
@@ -167,7 +167,7 @@ theme: "dark",
      }
 const deletePassword = async (id) => {
     // Send the custom uuid to your backend API
-    await fetch('http://localhost:3000/', {
+    await fetch('https://backend-of-password-manager-mu.vercel.app/', {
         method: 'DELETE',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ id }) // Sends { id: "your-uuid" }
