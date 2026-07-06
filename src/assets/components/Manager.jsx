@@ -254,10 +254,10 @@ theme="light"
             <table className="table-auto w-full overflow-hidden rounded-lg  ">
   <thead className="bg-green-700">
     <tr className="">
-      <th className="py-2">Website</th>
-      <th className="py-2">Name</th>
-      <th className="py-2">Password</th>
-      <th className="py-2">Action</th>
+      <th className="py-2 text-[12px] md:text-base">Website</th>
+      <th className="py-2 text-[12px] md:text-base">Name</th>
+      <th className="py-2 text-[12px] md:text-base">Password</th>
+      <th className="py-2 text-[12px] md:text-base">Action</th>
     </tr>
   </thead >
   <tbody className="">
