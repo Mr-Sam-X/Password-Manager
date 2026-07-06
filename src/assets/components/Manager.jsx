@@ -235,14 +235,14 @@ theme="light"
                 </div>
         
             </div>
-            <div className="flex justify-between items-center mx-auto max-w-4xl my-4">
-    <h2 className="text-xl font-bold text-white">Your Passwords</h2>
+            <div className="md:flex  md:justify-between items-center mx-auto max-w-4xl  my-4">
+    <h2 className="text-xl font-bold mb-5 md:mb-0 text-white">Your Passwords</h2>
     
     {/* 🔍 Add this Search Input Box */}
     <input 
         type="text" 
         placeholder="🔎 Search website or username..." 
-        className="rounded-full bg-slate-800 text-white px-4 py-2 border border-green-500 outline-none text-sm w-64"
+        className="rounded-full bg-slate-800 text-white px-4 py-2 border border-green-500 outline-none text-sm md:w-64 w-full"
         value={searchQuery}
         onChange={(e) => setSearchQuery(e.target.value)}
     />
