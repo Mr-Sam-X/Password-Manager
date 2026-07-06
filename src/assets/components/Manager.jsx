@@ -14,7 +14,7 @@ const Manager = () => {
     // Define an async function inside the effect to fetch data
     const fetchPasswords = async () => {
         try {
-            const response = await fetch(`https://backend-of-password-manager-mu.vercel.app/?adminEmail=${adminEmail}`);
+            const response = await fetch(`https://backend-of-password-manager-mu.vercel.app/api/?adminEmail=${adminEmail}`);
 
             const data = await response.json();
             console.log("Admin_Email",adminEmail)
