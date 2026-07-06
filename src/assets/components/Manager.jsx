@@ -192,7 +192,7 @@ const deletePassword = async (id) => {
 
     return (
         
-        <div className=" min-h-[88.7vh] inset-0 -z-10 h-full w-full items-center px-5 py-24 [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)]">
+        <div className=" min-h-[88.7vh] inset-0 -z-10 h-full w-full  overflow-x-hidden items-center px-5 py-24 [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)]">
             <ToastContainer
 position="top-right"
 autoClose={5000}
