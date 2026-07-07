@@ -263,22 +263,22 @@ theme="light"
   <tbody className="">
     {filteredPasswords.map((item)=>{
        return <tr key={item.id} className="text-center">
-      <td className="w-10 py-2 text-white border-b border-b-black "><a href={item.website} target="_blank">{item.website}</a>
+      <td className="w-10 py-2 text-[12px] md:text-base text-white border-b border-b-black "><a href={item.website} target="_blank">{item.website}</a>
       <span className="cursor-pointer" onClick={()=>{copytext(item.website)}}><lord-icon                                    
-                                                    style={{ "width": "25px", "height": "25px", "paddingTop": "9px", "paddingLeft": "8px" }}
+                                                    style={{ "width": "25px", "height": "25px",  "paddingTop": "9px", "paddingLeft": "8px" }}
                                                     src="https://cdn.lordicon.com/iykgtsbt.json"
                                                     trigger="hover" >
                                                 </lord-icon></span>
       
       </td>
-      <td className="w-10 py-2 text-white border-b border-b-black">{item.username}
+      <td className="w-10 py-2 text-[12px] md:text-base text-white border-b border-b-black">{item.username}
         <span className="cursor-pointer" onClick={()=>{copytext(item.username)}}><lord-icon                                    
                                                     style={{ "width": "25px", "height": "25px", "paddingTop": "9px", "paddingLeft": "8px" }}
                                                     src="https://cdn.lordicon.com/iykgtsbt.json"
                                                     trigger="hover" >
                                                 </lord-icon></span>
       </td>
-      <td className="w-10 py-2 text-white border-b border-b-black">{item.password}
+      <td className="w-10 py-2 text-[12px] md:text-base text-white border-b border-b-black">{item.password}
         <span className="cursor-pointer" onClick={()=>{copytext(item.password)}}><lord-icon                                    
                                                     style={{ "width": "25px", "height": "25px", "paddingTop": "9px", "paddingLeft": "8px" }}
                                                     src="https://cdn.lordicon.com/iykgtsbt.json"
