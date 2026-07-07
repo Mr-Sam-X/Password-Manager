@@ -125,7 +125,7 @@ const Signup = () => {
 
     }
     return (
-        <div className=" min-h-[88.7vh] inset-0 -z-10 h-full w-full items-center px-5 py-24 [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)]">
+        <div className=" min-h-[96.4vh] inset-0 -z-10 h-full w-full items-center px-5 py-24 [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)]">
 
             <ToastContainer
                 position="top-right"
@@ -165,7 +165,7 @@ const Signup = () => {
                         >
                         </lord-icon>
                         Register Admin</button>
-                         <div>Don't have an account? <span className="text-blue-500" onClick={()=>{navigate('/Signup');}}>Signup</span></div>
+                         <div>Already have an account? <span className="text-blue-500" onClick={()=>{navigate('/Login');}}>Signin</span></div>
                 </div>
             </div>
 
